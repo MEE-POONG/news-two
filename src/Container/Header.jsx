@@ -1,9 +1,10 @@
 import React from "react";
 import TheNavbar from "../Components/TheNavber";
+import { Container } from "react-bootstrap";
 export default function Header() {
   return (
-    <div className="header">
+    <Container>
       <TheNavbar />
-    </div>
+    </Container>
   );
 }

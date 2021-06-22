@@ -7,7 +7,7 @@ import CardScore from "../Components/CardScore";
 
 function Content() {
   return (
-    <Container className="pt-3">
+    <Container bg="light" className="pt-3 ">
       <Row>
         <Col sm={3} className="py-3">
           <CardUser />
@@ -18,7 +18,7 @@ function Content() {
           <NewsContents />
         </Col>
         <Col sm={4}>
-         <h1>Sport News</h1> 
+          <h1>Sport News</h1>
           <CardScore />
         </Col>
       </Row>

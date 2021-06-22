@@ -8,12 +8,12 @@ import {
   FormControl,
 } from "react-bootstrap";
 import { GrHome } from "react-icons/gr";
-import { FiFilm } from "react-icons/fi";
-import { FaPoll,FaRegFileImage } from "react-icons/fa";
+import { FiFilm, FiTrello } from "react-icons/fi";
+import { FaPoll } from "react-icons/fa";
 
 export default function TheNavbar() {
   return (
-    <Navbar bg="ligth" expand="lg" className="flex">
+    <Navbar sticky="top" bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#">News</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -36,15 +36,15 @@ export default function TheNavbar() {
               pools
             </Nav.Link>
             <Nav.Link href="#action2">
-              <FaRegFileImage />
-              vidio
+              <FiTrello />
+              Magazine
             </Nav.Link>
             <Nav.Link href="#action2">
               <FiFilm />
               vidio
             </Nav.Link>
-            
           </Nav>
+
           <Form className="d-flex ">
             <FormControl
               type="search"

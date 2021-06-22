@@ -1,19 +1,19 @@
-import React from 'react'
-import { Card,ListGroup } from 'react-bootstrap'
+import React from "react";
+import { Card } from "react-bootstrap";
+import { Avatar } from "@material-ui/core";
 
 function CardUser() {
-    return (
-        
-            <Card className="d-none d-md-blok d-lg-block d-xl-block" style={({ width: "18rem"},{ margin: "1rem" })}>
-              <Card.Header>Featured</Card.Header>
-              <ListGroup variant="flush">
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-              </ListGroup>
-            </Card>
-          
-    )
+  return (
+    <Card
+      className="d-none d-md-blok d-lg-block d-xl-block"
+      style={({ width: "18rem" }, { margin: "1rem" })}
+    >
+      <Card.Body >
+        <Avatar src="https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_960_720.jpg" ></Avatar>
+        <Card.Title className="pt-2"> Ataxx taa.</Card.Title>
+      </Card.Body>
+    </Card>
+  );
 }
 
-export default CardUser
+export default CardUser;
