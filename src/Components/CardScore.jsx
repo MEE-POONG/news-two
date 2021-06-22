@@ -4,27 +4,23 @@ import { Card,ListGroup,ListGroupItem } from 'react-bootstrap'
 
 function CardScore() {
     return (
-        <Card style={{ width: '18rem' }}>
+  
+        <Card  style={{ width: '18rem' },{ margintop: "1rem" }}>
         <Card.Body>
+        <ListGroup className="list-group-flush">
+          <ListGroupItem>
           <Card.Title>Card Title</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+          <small className="text-muted" >VS Full time</small>
           </Card.Text>
-        </Card.Body>
-        <ListGroup className="list-group-flush">
-          <ListGroupItem>Cras justo odio</ListGroupItem>
-          <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-        </ListGroup>
-        <ListGroup className="list-group-flush">
-          <ListGroupItem>Cras justo odio</ListGroupItem>
-          <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-        </ListGroup>
-        <Card.Body>
-          <Card.Link href="#">Card Link</Card.Link>
-          <Card.Link href="#">Another Link</Card.Link>
+          <Card.Title>Card Title</Card.Title>
+          </ListGroupItem>
+          <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </ListGroup>
         </Card.Body>
       </Card>
+      
     )
 }
 
