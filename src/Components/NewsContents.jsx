@@ -44,14 +44,6 @@ function NewsContents() {
         )}
       </Row>
       <Card className="text-center">
-        {/* <Card.Img src="" />
-          <Card.Body>
-            <Card.Title>{items.title}</Card.Title>
-            <Card.Text>{items.caption}</Card.Text>
-            <Card.Text>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Text>
-          </Card.Body> */}
       </Card>
     </div>
   );
